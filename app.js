@@ -68,6 +68,27 @@ app.post ("/putQuestion", function(req, res) {
 });
 
 
+app.post ("/putQuestionList", function(req, res) {
+	console.log ("putQuestionList called");
+	easypost.get (req, res, function(data) {
+	  console.log ("printing the data received in post:");
+	  console.log(JSON.parse(data));
+
+	  questionListData = JSON.parse(data);
+	  if (questionListData) {
+			questionListData.forEach(function(element, index, array){
+				questionDao.putQuestion(element, function(data){
+				console.log("Called putQuestion in Dao for" + data);
+			  });
+			})
+
+    }
+		res.json({"res" : "success"});
+
+	});
+});
+
+
 app.get('/deleteQuestions', function(req, res){
 	console.log("deleteQuestions called, the query is:");
 	console.log(req.query);
@@ -143,6 +164,28 @@ app.get('/deleteAnswers', function(req, res){
 
 });
 
+
+
+
+app.post ("/putAnswerList", function(req, res) {
+	console.log ("putAnswerList called");
+	easypost.get (req, res, function(data) {
+	  console.log ("printing the data received in post:");
+	  console.log(JSON.parse(data));
+
+	  answerListData = JSON.parse(data);
+	  if (answerListData) {
+			answerListData.forEach(function(element, index, array){
+				answerDao.putAnswer(element, function(data){
+				console.log("Called putAnswer in Dao for" + data);
+			  });
+			})
+
+    }
+		res.json({"res" : "success"});
+
+	});
+});
 
 
 
