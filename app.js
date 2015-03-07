@@ -7,6 +7,8 @@ var monk = require ("monk");
 
 
 var questionDao = require('./questionDao');
+var answerDao = require('./answerDao');
+
 
 var database = null;
 
@@ -61,6 +63,126 @@ app.post ("/putQuestion", function(req, res) {
 		  });
 
     }
+
+	});
+});
+
+
+app.post ("/putQuestionList", function(req, res) {
+	console.log ("putQuestionList called");
+	easypost.get (req, res, function(data) {
+	  console.log ("printing the data received in post:");
+	  console.log(JSON.parse(data));
+
+	  questionListData = JSON.parse(data);
+	  if (questionListData) {
+			questionListData.forEach(function(element, index, array){
+				questionDao.putQuestion(element, function(data){
+				console.log("Called putQuestion in Dao for" + data);
+			  });
+			})
+
+    }
+		res.json({"res" : "success"});
+
+	});
+});
+
+
+app.get('/deleteQuestions', function(req, res){
+	console.log("deleteQuestions called, the query is:");
+	console.log(req.query);
+	questionDao.deleteQuestions(req.query, function(data){
+		console.log("Called deleteQuestions in DAO, the json result is: ");
+		console.log(data);
+		res.json({"res" : data});
+	});
+
+});
+
+
+
+/**
+Gets all the answers filtering by location
+*/
+app.get('/getAnswers', function(req, res){
+	console.log("getAnswers called, the query is:");
+	console.log(req.query);
+	answerDao.getAnswers(req.query, function(data){
+		console.log("Called getAnswers, the json result is: ");
+		console.log(data);
+		res.json({"res" : data});
+	});
+
+});
+
+/** //TODO remove this, Kelson needed this  to test his android application
+Gets all the answers filtering by location
+*/
+app.post('/getAnswers', function(req, res){
+	console.log("getAnswers called with post, the query is:");
+	console.log(req.query);
+	answerDao.getAnswers(req.query, function(data){
+		console.log("Called getAnswers with post, the json result is: ");
+		console.log(data);
+		res.json({"res" : data});
+	});
+
+});
+
+
+
+/**
+ * handles the posted data from the clients
+ */
+app.post ("/putAnswer", function(req, res) {
+	console.log ("putAnswer called");
+	easypost.get (req, res, function(data) {
+	  console.log ("printing the data received in post:");
+	  console.log(JSON.parse(data));
+	  answerData = JSON.parse(data);
+	  if (answerData) {
+	  	answerDao.putAnswer(answerData, function(data){
+			console.log("Called putAnswer in Dao");
+			res.json({"res" : data});
+		  });
+
+    }
+
+	});
+});
+
+
+app.get('/deleteAnswers', function(req, res){
+	console.log("deleteAnswers called, the query is:");
+	console.log(req.query);
+	answerDao.deleteAnswers(req.query, function(data){
+		console.log("Called deleteAnswers in DAO, the json result is: ");
+		console.log(data);
+		res.json({"res" : data});
+	});
+
+});
+
+
+
+
+app.post ("/putAnswerList", function(req, res) {
+	console.log ("putAnswerList called");
+	easypost.get (req, res, function(data) {
+	  console.log ("printing the data received in post:");
+	  console.log(JSON.parse(data));
+
+	  answerListData = JSON.parse(data);
+	  if (answerListData) {
+			answerListData.forEach(function(element, index, array){
+				answerDao.putAnswer(element, function(data){
+				console.log("Called putAnswer in Dao for" + data);
+			  });
+			})
+
+    }
+		res.json({"res" : "success"});
 
 	});
 });

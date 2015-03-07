@@ -12,14 +12,27 @@ var putQuestion = function(questionData, callback) {
 
 var getQuestions = function(filter, callback) {
 	var questionCol = db.get("question");
-	//TODO use filter
-	questionCol.find({}, {sort : { questionCode : 1 }}, function (error, questionsList) {
+	console.log("printing the filter for the getQuestions:");
+	console.log(filter);
+	var filterJson = {};
+	if(filter && filter.Category){
+		filterJson = {Category : filter.Category};
+	}
+	questionCol.find(filterJson, {sort : { Category : 1 }}, function (error, questionsList) {
+		  callback(questionsList);
+	});
+};
+
+var deleteQuestions = function(filter, callback) {
+	var questionCol = db.get("question");
+	questionCol.drop(function (error, questionsList) {
 		  callback(questionsList);
 	});
 };
 
 
-
 module.exports.putQuestion = putQuestion;
 
 module.exports.getQuestions = getQuestions;
+
+module.exports.deleteQuestions = deleteQuestions;

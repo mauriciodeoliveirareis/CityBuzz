@@ -1,6 +1,23 @@
 $( document ).ready(function() {
     console.log( "ready!" );
     
+    $('#dialog').jqm({
+	onHide: function(hash) {
+	    //$("#dialog-msg").html('');
+	    $("#dialog-msg").css('height','auto');
+	    hash.w.fadeOut('2000',function(){
+                hash.o.remove();
+	    });
+	}}); 
+    
+    $('.migration-edit-button').click(function() {
+
+	$('#dialog').jqmShow();
+
+    });
+
+
+
     var map = L.map('map').setView([53.3478, -6.2597], 12);
 
     L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {

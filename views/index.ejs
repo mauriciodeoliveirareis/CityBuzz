@@ -22,7 +22,14 @@
   <body>
       <div class="navbar navbar-inverse navbar-static-top"  style="margin-bottom: 0px;">
           <div class="container">
-	          <a href="#" class="navbar-brand">CityBuzz - <small style="color: yellow">beta</small></a>
+              
+              <a href="#" class="navbar-brand">
+	        <div class="header-logo"></div>
+	      </a>
+              <a href="#" class="navbar-brand">
+		CityBuzz - <small style="color: yellow">beta</small>
+	      </a>
+
         
               <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 	          <span class="icon-bar"></span>
@@ -39,15 +46,32 @@
 	        </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <div class="container">
+    <div class="jumbotron" style="padding-top: 20px; margin-bottom: 5px; padding-bottom: 20px;">
+      <div class="main-section-header container" style="padding-left: 0px; padding-right: 5px; padding-top: 0px; margin-top: -20px; margin-bottom: -20px;" >
 	<h1>Welcome to CityBuzz!</h1>
 	<p>Select one of the options below and <br/>let the cyber-citizenship experience begin.</p>
-	<a class="btn btn-warning">Learn More</a>
-       </div>
+        <a class="btn-learn-more btn btn-warning">Learn More about it ....</a>
+      </div>
     </div>
    
     <div class="container">
+      <div class="row">
+          &nbsp; &nbsp;
+          <div class="dropdown" style="padding-left: 50px;">
+              <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="btn btn-default dropdown-toggle"> 
+                   Questions Categories
+                   <span class="caret"></span>
+              </button>
+              <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu">
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+              </ul>
+          </div>
+          &nbsp; &nbsp;
+      </div>
+          
       <div class="row">
           <div id="map" style="height: 440px; border: 1px solid #AAA;"></div>
       </div>
