@@ -10,11 +10,14 @@ $( document ).ready(function() {
 	    });
 	}}); 
     
-    $('.migration-edit-button').click(function() {
+    $('.btn-learn-more').click(function() {
 
 	$('#dialog').jqmShow();
 
     });
+    $('#close-stats-dialog').click(function() {
+        $('#dialog').jqmHide();
+     });
 
 
 
@@ -29,8 +32,8 @@ $( document ).ready(function() {
     }).addTo(map);
 
     $.ajax({
-	url: 'http://localhost:3000/getQuestions',
-	success: function getQuestions(data) {
+	url: '/getAnswers',
+	success: function getAnswers(data) {
 
 	    console.log('got it!');
 	    console.log(data.res);
@@ -40,6 +43,20 @@ $( document ).ready(function() {
 	},
 	dataType: 'json'
     });
+
+    var time = setInterval(reloadMap, 5000);
+
+    function reloadMap() {
+         $.ajax({
+             url: '/getAnswers',
+             success: function getAnswers(data) {
+                 console.log('got it!');
+                 console.log(data.res);
+                 placeMarkersOnTheMap(data.res); },
+             dataType: 'json' 
+    }); }
+
+    //http://localhost:3000/getQuestions?Category=Culture
 
     function placeMarkersOnTheMap(pointsFromAjaxRequest) {
 

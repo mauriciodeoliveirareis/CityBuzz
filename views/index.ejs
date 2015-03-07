@@ -38,12 +38,12 @@
               </button>
 
               <div class="collapse navbar-collapse navHeaderCollapse">
-	      <ul class="nav navbar-nav navbar-right">            
+	          <ul class="nav navbar-nav navbar-right">            
 	              <li><a href="#">Home</a></li>
 		      <li><a href="about.ejs">About</a></li>      
-              </ul>
-	            </div>
-	        </div>
+                  </ul>
+	      </div>
+	  </div>
       </div>
     </div>
     <div class="jumbotron" style="padding-top: 20px; margin-bottom: 5px; padding-bottom: 20px;">
@@ -55,18 +55,19 @@
     </div>
    
     <div class="container">
-      <div class="row">
+      <div class="row" style="padding-left: 50px;">
           &nbsp; &nbsp;
-          <div class="dropdown" style="padding-left: 50px;">
+          <div class="dropdown">
               <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="btn btn-default dropdown-toggle"> 
                    Questions Categories
                    <span class="caret"></span>
               </button>
               <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+                  <li role="presentation"><a href="#" onClick="categoryFilter('accessibility')" tabindex="-1" role="menuitem">Accessibility</a></li>
+                  <li role="presentation"><a href="#" onClick="categoryFilter('accessibility')" tabindex="-1" role="menuitem">Community Provision</a></li>
+                  <li role="presentation"><a href="#" onClick="categoryFilter('accessibility')" tabindex="-1" role="menuitem">Culture</a></li>
+                  <li role="presentation"><a href="#" onClick="categoryFilter('accessibility')" tabindex="-1" role="menuitem">Environment</a></li>
+                  <li role="presentation"><a href="#" onClick="categoryFilter('accessibility')" tabindex="-1" role="menuitem">Local Amenities</a></li>
               </ul>
           </div>
           &nbsp; &nbsp;
@@ -83,7 +84,7 @@
 	  </div>
           <div class="panel-body">
 	      
-	      <button type="button" id="accept-migration-template" class="btn btn-success">That's right</button>
+	      <button type="button" id="close-stats-dialog" class="btn btn-success">That's right</button>
 	  </div>
       </div>
     </div>
