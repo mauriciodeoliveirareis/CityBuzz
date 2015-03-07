@@ -1,0 +1,36 @@
+$( document ).ready(function() {
+    console.log( "ready!" );
+    
+    var map = L.map('map').setView([53.3478, -6.2597], 12);
+
+    L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+	    'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	id: 'examples.map-i875mjb7'
+    }).addTo(map);
+
+    $.ajax({
+	url: 'http://localhost:3000/getQuestions',
+	success: function getQuestions(data) {
+
+	    console.log('got it!');
+	    console.log(data.res);
+
+            placeMarkersOnTheMap(data.res);
+
+	},
+	dataType: 'json'
+    });
+
+    function placeMarkersOnTheMap(pointsFromAjaxRequest) {
+
+	pointsFromAjaxRequest.forEach(function(point) {
+            L.marker([point.coordX, point.coordY]).addTo(map)
+		.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+	});
+
+    }
+
+});

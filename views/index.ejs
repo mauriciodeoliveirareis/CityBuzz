@@ -1,1 +1,68 @@
-//TODO
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <title>CityBuzz - Your Cyber-Citizenship Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/jqModal.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+
+    <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+    
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/citybuzz.js"></script>
+    
+    <script type="text/javascript" src="js/jqModal.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+
+  </head>
+  <body>
+      <div class="navbar navbar-inverse navbar-static-top"  style="margin-bottom: 0px;">
+          <div class="container">
+	          <a href="#" class="navbar-brand">CityBuzz - <small style="color: yellow">beta</small></a>
+        
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+              </button>
+
+              <div class="collapse navbar-collapse navHeaderCollapse">
+	      <ul class="nav navbar-nav navbar-right">            
+	              <li><a href="#">Home</a></li>
+		      <li><a href="about.ejs">About</a></li>      
+              </ul>
+	            </div>
+	        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+	<h1>Welcome to CityBuzz!</h1>
+	<p>Select one of the options below and <br/>let the cyber-citizenship experience begin.</p>
+	<a class="btn btn-warning">Learn More</a>
+       </div>
+    </div>
+   
+    <div class="container">
+      <div class="row">
+          <div id="map" style="height: 440px; border: 1px solid #AAA;"></div>
+      </div>
+      <div id="dialog" class="panel panel-default jqmWindow">
+          <div class="panel-body">
+          <div id="dialog-msg">
+          <div class="page-header">
+	  <h4>Poll Statistics</h4>
+	  </div>
+          <div class="panel-body">
+	      
+	      <button type="button" id="accept-migration-template" class="btn btn-success">That's right</button>
+	  </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
