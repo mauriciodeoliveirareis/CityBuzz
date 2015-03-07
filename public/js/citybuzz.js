@@ -44,17 +44,33 @@ $( document ).ready(function() {
 	dataType: 'json'
     });
 
-    var time = setInterval(reloadMap, 5000);
+    var initialMapUpdateScheduler = setInterval(reloadMap, 5000);
+
+    category=undefined;
+
+    arrayOfTimers = [];
+    arrayOfTimers.push(initialMapUpdateScheduler);
 
     function reloadMap() {
+
+        if (category===undefined) {
+            theUrl = '/getAnswers';
+	} else {
+            theUrl = '/getAnswers?category=' + category;
+            console.log("#### ## WITH CATEGORY " + category);
+        }
          $.ajax({
-             url: '/getAnswers',
+             url: theUrl,
              success: function getAnswers(data) {
                  console.log('got it!');
                  console.log(data.res);
                  placeMarkersOnTheMap(data.res); },
+             error: function(data) {
+		 alert('request failed :'+data);
+             },
              dataType: 'json' 
-    }); }
+         });
+    }
 
     //http://localhost:3000/getQuestions?Category=Culture
 
@@ -64,9 +80,28 @@ $( document ).ready(function() {
             console.log("adding point,coordX = " + point.coordX);
             console.log("adding point,coordY = " + point.coordY);
             L.marker([point.coordX, point.coordY]).addTo(map)
-		.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+		.bindPopup(point.answer).openPopup();
 	});
 
+    }
+    
+    $('.category-option').click(function() {
+	console.log('drop down option SELECTED! ' + $(this).html() );
+       
+        clearAllTimers();
+        
+        category=$(this).html();
+  
+        reloadMap();
+        var categoryUpdateScheduler = setInterval( reloadMap , 5000 );
+        arrayOfTimers.push(categoryUpdateScheduler);
+    });
+
+    function clearAllTimers() {
+	for (var i = 0; i < arrayOfTimers.length; i++) {
+            clearInterval(arrayOfTimers[i]);
+	}
+        arrayOfTimers = [];
     }
 
 });
