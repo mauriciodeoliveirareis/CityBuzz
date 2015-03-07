@@ -14,10 +14,25 @@ $( document ).ready(function() {
     $.ajax({
 	url: 'http://localhost:3000/getQuestions',
 	success: function getQuestions(data) {
+
 	    console.log('got it!');
 	    console.log(data.res);
+
+            placeMarkersOnTheMap(data.res);
+
 	},
 	dataType: 'json'
     });
+
+    function placeMarkersOnTheMap(pointsFromAjaxRequest) {
+
+	pointsFromAjaxRequest.forEach(function(point) {
+            console.log("adding point,coordX = " + point.coordX);
+            console.log("adding point,coordY = " + point.coordY);
+            L.marker([point.coordX, point.coordY]).addTo(map)
+		.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+	});
+
+    }
 
 });

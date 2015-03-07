@@ -1,0 +1,74 @@
+.page-header {
+    margin-top: 0;
+}
+.featuredImg {
+    margin-bottom: 15px;
+}
+
+.jumbotron {
+    margin-top: 0px;
+	background: url('../images/header_smart_city.jpg') no-repeat center top;
+    -webkit-background-size: contain; /* For WebKit*/
+    -moz-background-size: contain;    /* Mozilla*/
+    -o-background-size: contain;      /* Opera*/
+    background-size: contain;         /* Generic*/
+	
+}
+.jumbotron h1 {
+	font-size: 48px;
+}
+
+#form-control {
+	font-size: 10px;
+}
+.sadFace {
+	width: 30px;
+	height: 30px;
+}
+
+/* migration-o-matic */
+.migration-edit-button {
+	background: url('../img/edit-template.png') no-repeat center bottom;
+	float: right;
+	width: 48px;
+	height: 48px;
+}
+.migration-item-box {
+	list-style:none;
+	border:1px solid #DDD;	
+    padding-left: 0px;
+	width: 326px;
+	float: left;
+}
+.migration-item-box li {
+	text-align: left;
+	border-bottom: 1px solid #DDD;
+	display: block;
+	float: left;
+	clear: left;
+	line-height: 24px;
+	width: 326px;	
+}
+.migration-item-row {
+	height: 24px;
+	width: 1px;
+	white-space:nowrap;
+	overflow: visible !important;
+	/*background-color: #86C67C;*/
+	float: left;
+}
+.migration-status {
+	width: 23px;
+	height: 20px;
+	float: right;
+}
+.migration-status-ok {
+	background: url('../img/ok.png') no-repeat center bottom;
+	float: right;
+	display: none;
+}
+.migration-status-fail {
+	background: url('../img/fail.png') no-repeat center bottom;
+	float: right;
+	display: none;
+}
