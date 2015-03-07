@@ -14,8 +14,12 @@ var getAnswers = function(filter, callback) {
 	var answerCol = db.get("answer");
 	//TODO use filter
   console.log("printing the filter for the getAnswers:");
-  console.log(filter.question_id);
-	answerCol.find({question_id : filter.question_id}, {sort : { answerCode : 1 }}, function (error, answersList) {
+  console.log(filter);
+  var filterJson = {};
+	if(filter && filter.question_id){
+		filterJson = {question_id : filter.question_id};
+	}
+	answerCol.find(filterJson, {sort : { timestamp : -1 }}, function (error, answersList) {
 		  callback(answersList);
 	});
 };
