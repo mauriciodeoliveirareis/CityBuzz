@@ -15,10 +15,10 @@ var getQuestions = function(filter, callback) {
 	console.log("printing the filter for the getQuestions:");
 	console.log(filter);
 	var filterJson = {};
-	if(filter && filter.Category){
-		filterJson = {Category : filter.Category};
+	if(filter && filter.category){
+		filterJson = {category : filter.category};
 	}
-	questionCol.find(filterJson, {sort : { Category : 1 }}, function (error, questionsList) {
+	questionCol.find(filterJson, {sort : { category : 1 }}, function (error, questionsList) {
 		  callback(questionsList);
 	});
 };

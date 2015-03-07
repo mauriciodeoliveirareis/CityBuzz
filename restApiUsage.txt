@@ -1,8 +1,8 @@
 Gets all the questions
 http://localhost:3000/getQuestions
 
-Gets all the questions with Category Culture
-http://localhost:3000/getQuestions?Category=Culture
+Gets all the questions with category Culture
+http://localhost:3000/getQuestions?category=Culture
 
 Gets all the answers
 http://localhost:3000/getAnswers
@@ -16,13 +16,33 @@ curl -X POST -H "Content-Type: application/json" -d '[
  {
 
  "Question": "Do you like your neighbourhood?",
- "Category": "Culture"
+ "category": "Culture"
 
  }
 ,{
 
  "Question": "Did you grow up in your neighbourhood?",
- "Category": "Culture"
+ "category": "Culture"
 
  }
+]' http://localhost:3000/putQuestionList
+
+
+
+
+
+curl -X POST -H "Content-Type: application/json" -d '[
+ {
+
+ "Question": "Have you ever feel uncorfortable in the presence of some adult?",
+ "category": "Molestation"
+
+ }
+,{
+
+ "Question": "Have you ever feel uncorfortable in the presence of some kid?",
+ "category": "Bulling"
+
+ }
+
 ]' http://localhost:3000/putQuestionList
