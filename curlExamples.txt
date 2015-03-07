@@ -1,0 +1,21 @@
+//insert question example
+curl -X POST -H "Content-Type: application/json" -d '
+ {
+ 
+ "Question text": "That is a questions that should be deleted, right?",
+ "Audience": "Kids"
+ 
+ }
+' http://citybuzz.mybluemix.net/putQuestion
+
+
+//insert answer example
+curl -X POST -H "Content-Type: application/json" -d '
+ {
+ 
+ "Answer text": "Delete, please",
+ "Question": "A question key here"
+ 
+ }
+' http://localhost:3000/putAnswer
+
