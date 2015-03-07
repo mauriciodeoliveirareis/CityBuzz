@@ -18,8 +18,16 @@ var getQuestions = function(filter, callback) {
 	});
 };
 
+var deleteQuestions = function(filter, callback) {
+	var questionCol = db.get("question");
+	questionCol.drop(function (error, questionsList) {
+		  callback(questionsList);
+	});
+};
 
 
 module.exports.putQuestion = putQuestion;
 
 module.exports.getQuestions = getQuestions;
+
+module.exports.deleteQuestions = deleteQuestions;

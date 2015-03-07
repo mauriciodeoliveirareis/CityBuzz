@@ -66,6 +66,19 @@ app.post ("/putQuestion", function(req, res) {
 });
 
 
+app.get('/deleteQuestions', function(req, res){
+	console.log("deleteQuestions called, the query is:");
+	console.log(req.query);
+	questionDao.deleteQuestions(req.query, function(data){
+		console.log("Called deleteQuestions in DAO, the json result is: ");
+		console.log(data);
+		res.json({"res" : data});
+	});
+
+});
+
+
+
 
 //DO NOT TOUCH FROM HERE!
 // There are many useful environment variables available in process.env.
