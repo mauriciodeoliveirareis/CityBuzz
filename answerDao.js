@@ -12,13 +12,18 @@ var putAnswer = function(answerData, callback) {
 
 var getAnswers = function(filter, callback) {
 	var answerCol = db.get("answer");
-	//TODO use filter
   console.log("printing the filter for the getAnswers:");
   console.log(filter);
   var filterJson = {};
-	if(filter && filter.question_id){
-		filterJson = {question_id : filter.question_id};
+	if(filter){
+    if(filter.question_id) {
+		    filterJson.question_id = filter.question_id;
+    }
+    if(filter.category) {
+		    filterJson.category = filter.category;
+    }
 	}
+  console.log(filterJson);
 	answerCol.find(filterJson, {sort : { timestamp : -1 }}, function (error, answersList) {
 		  callback(answersList);
 	});
