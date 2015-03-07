@@ -4,7 +4,7 @@ var db = monk ("mongodb://IbmCloud_1140l45k_8qs5ds2q_sufis1th:Mmz7FogwIVV1t_48ch
 
 var putAnswer = function(answerData, callback) {
 	var answerCol = db.get("answer");
-
+  answerData.timestamp = new Date().getTime();
 	answerCol.insert(answerData, function (error, response) {
 		  callback(response);
 	});
