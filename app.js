@@ -95,6 +95,22 @@ app.get('/getAnswers', function(req, res){
 
 });
 
+/** //TODO remove this, Kelson needed this  to test his android application
+Gets all the answers filtering by location
+*/
+app.post('/getAnswers', function(req, res){
+	console.log("getAnswers called with post, the query is:");
+	console.log(req.query);
+	answerDao.getAnswers(req.query, function(data){
+		console.log("Called getAnswers with post, the json result is: ");
+		console.log(data);
+		res.json({"res" : data});
+	});
+
+});
+
+
+
 /**
  * handles the posted data from the clients
  */
