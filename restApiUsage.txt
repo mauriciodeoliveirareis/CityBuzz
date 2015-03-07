@@ -1,0 +1,28 @@
+Gets all the questions
+http://localhost:3000/getQuestions
+
+Gets all the questions with Category Culture
+http://localhost:3000/getQuestions?Category=Culture
+
+Gets all the answers
+http://localhost:3000/getAnswers
+
+Gets all the answers from the question with id 54fb0a2df16479f81d56a4f0
+http://localhost:3000/getAnswers?question_id=54fb0a2df16479f81d56a4f0
+
+
+insert two questions at once
+curl -X POST -H "Content-Type: application/json" -d '[
+ {
+
+ "Question": "Do you like your neighbourhood?",
+ "Category": "Culture"
+
+ }
+,{
+
+ "Question": "Did you grow up in your neighbourhood?",
+ "Category": "Culture"
+
+ }
+]' http://localhost:3000/putQuestionList
