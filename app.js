@@ -25,6 +25,11 @@ app.get('/', function(req, res){
 	res.render('index.ejs');
 });
 
+app.get('/maptest', function(req, res){
+    res.render('maptest.ejs');
+});
+
+
 
 /**
 Gets all the questions filtering by location

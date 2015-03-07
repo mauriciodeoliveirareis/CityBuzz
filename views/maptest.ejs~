@@ -1,0 +1,20 @@
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+   <head profile="http://gmpg.org/xfn/11">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 
+      <link rel="stylesheet" href="/leaflet.css" />
+      
+      <script src="/leaflet.js"></script>
+      <script src="/citybuzz.js"></script>
+   </head>
+ 
+   <body>
+      <h1>Leaflet Example</h1>
+      
+      <p>Here's a map of the countries I've either lived in or travelled through for a month or more.
+      
+      <div id="map" style="height: 440px; border: 1px solid #AAA;"></div>
+ 
+     
+   </body>
+</html>
