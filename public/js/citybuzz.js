@@ -73,6 +73,9 @@ $( document ).ready(function() {
              success: function getAnswers(data) {
                  console.log('got it!');
                  console.log(data.res);
+                 
+                 clearAllMarkers();       
+
                  placeMarkersOnTheMap(data.res); },
              error: function(data) {
 		 alert('request failed :'+data);
@@ -204,10 +207,10 @@ function setPieChart(pointsFromAjaxRequest) {
 var yescounter = 0;
 var nocounter = 0;
 	$.each(pointsFromAjaxRequest, function() {
-		if(this.answer=='YES'){
+		if(this.answer=='1'){
 			yescounter++;
 		}
-		else if (this.answer=='NO'){
+		else if (this.answer=='0'){
 			nocounter++;
 		}
 		
