@@ -74,13 +74,17 @@ $( document ).ready(function() {
 
     //http://localhost:3000/getQuestions?Category=Culture
 
+    arrayOfMarkers = [];
+
     function placeMarkersOnTheMap(pointsFromAjaxRequest) {
 
 	pointsFromAjaxRequest.forEach(function(point) {
-            console.log("adding point,coordX = " + point.coordX);
-            console.log("adding point,coordY = " + point.coordY);
-            L.marker([point.coordX, point.coordY]).addTo(map)
+            //console.log("adding point,coordX = " + point.coordX);
+            //console.log("adding point,coordY = " + point.coordY);
+            var marker = L.marker([point.coordX, point.coordY]).addTo(map)
 		.bindPopup(point.answer).openPopup();
+            
+            arrayOfMarkers.push(marker);
 	});
 
     }
@@ -89,7 +93,8 @@ $( document ).ready(function() {
 	console.log('drop down option SELECTED! ' + $(this).html() );
        
         clearAllTimers();
-        
+        clearAllMarkers();        
+
         category=$(this).html();
   
         reloadMap();
@@ -101,6 +106,13 @@ $( document ).ready(function() {
 	for (var i = 0; i < arrayOfTimers.length; i++) {
             clearInterval(arrayOfTimers[i]);
 	}
+        arrayOfTimers = [];
+    }
+
+    function clearAllMarkers() {
+	for (var i = 0; i < arrayOfMarkers.length; i++) {
+            map.removeLayer(arrayOfMarkers[i]);
+        }
         arrayOfTimers = [];
     }
 
