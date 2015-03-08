@@ -732,7 +732,7 @@ curl -X POST -H "Content-Type: application/json" -d '
 curl -X POST -H "Content-Type: application/json" -d '
  {
 
- "question": "Did you enjoy the last walk you took in your neighbourhood?",
+ "question": "Delete me, ok?",
  "category": "Environment"
 
  }

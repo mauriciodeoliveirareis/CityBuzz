@@ -218,5 +218,6 @@ var services = JSON.parse(process.env.VCAP_SERVICES || "{}");
 var host = (process.env.VCAP_APP_HOST || 'localhost');
 var port = (process.env.VCAP_APP_PORT || 3000);
 
-app.listen(port, host);
+//app.listen(port, host);
+app.listen(port);
 console.log('App started on port ' + port);
