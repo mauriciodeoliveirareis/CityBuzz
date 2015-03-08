@@ -115,5 +115,81 @@ $( document ).ready(function() {
         }
         arrayOfTimers = [];
     }
-
 });
+
+function buildPieChart(chartData){
+		
+        // Build the chart
+        $('#panel-body').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: chartData.question
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: chartData.chartType,
+                name: chartData.question,
+				colors: ['#7cFF22', '#FF2222'],
+                data: [
+                    ['Yes',   chartData.yesPercentage],
+                    {
+                        name: 'No',
+                        y: chartData.noPercentage,
+                        sliced: true,
+                        selected: true
+                    }
+                ]
+            }]
+        });
+	}
+
+function ajaxCall(){
+			
+			$.ajax({
+			url: '/getAnswers',
+			success: function getAnswers(data) {
+                 setPieChart(data.res); },
+             error: function(data) {
+		 alert('request failed :'+data);
+             },
+             dataType: 'json' 
+         });
+}
+
+function setPieChart(pointsFromAjaxRequest) {
+var yescounter = 0;
+var nocounter = 0;
+	$.each(pointsFromAjaxRequest, function() {
+		if(this.answer=='YES'){
+			yescounter++;
+		}
+		else if (this.answer=='NO'){
+			nocounter++;
+		}
+		
+    });
+	var first = pointsFromAjaxRequest[0].question;
+	var testData = {
+				question: first,
+				chartType:'pie',
+				yesPercentage : yescounter,
+				noPercentage : nocounter
+			};
+	buildPieChart(testData);
+    }
