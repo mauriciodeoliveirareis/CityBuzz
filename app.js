@@ -27,8 +27,8 @@ app.get('/', function(req, res){
 	res.render('index.ejs');
 });
 
-app.get('/maptest', function(req, res){
-    res.render('maptest.ejs');
+app.get('/mobile_map', function(req, res){
+    res.render('mobile_map.ejs');
 });
 
 
