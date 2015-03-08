@@ -23,7 +23,6 @@
 	
 }
 
-
 .jumbotron h1 {
     font-size: 48px;
 }
@@ -34,5 +33,50 @@
 
 .leaflet-control-zoom leaflet-bar {
     z-index:30;
+}
+
+.button-download-app {
+    color: #ffffff !important;
+}
+
+#footer-content {
+    /*color: #4d4d4d;*/
+    overflow: hidden;
+    padding-bottom: 5em 0;
+    padding-left: 5em 0;
+    padding-right: 5em 0;
+    padding-top: 10px;
+    background-color: #E6E6E6;
+    margin-top: 10px;
+}
+#footer-content a {
+    color: #515151;
+}
+#footer-content h2 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+#footer-content strong {
+    color: #9f9f9f;
+}
+#footer-content .button-style {
+
+}
+#footer-content #fbox1 {
+    float: left;
+    margin-right: 24px;
+    padding-left: 25px;
+    width: 314px;
+}
+#footer-content #fbox2 {
+    float: left;
+    padding: 0 20px;
+    width: 446px;
+}
+#footer-content #fbox3 {
+    float: right;
+    padding-right: 50px;
+    width: 252px;
 }
 
