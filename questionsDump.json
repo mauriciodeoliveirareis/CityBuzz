@@ -1,0 +1,278 @@
+[
+   {
+     "_id": "54fb62eeb64d29ac2035eaee",
+     "question": "Are the streets congested in your area?",
+     "category": "Accessibility",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf2",
+     "question": "Is there adequate residents and visitor parking around here?",
+     "category": "Accessibility",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf0",
+     "question": "Are the local bus route(s) frequent enough here?",
+     "category": "Accessibility",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf1",
+     "question": "Do you have to take more than 1 bus to get to work/school?",
+     "category": "Accessibility",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaef",
+     "question": "Is this nighbourhood wheelchair friendly?",
+     "category": "Accessibility",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eafb",
+     "question": "Have you ever feel uncorfortable in the presence of some kid?",
+     "category": "Bulling",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eadc",
+     "question": "Does your social welfare office treat you well?",
+     "category": "Community Provision",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eade",
+     "question": "Does this neighbourhood have adequate social amenities?",
+     "category": "Community Provision",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf6",
+     "question": "Did you enjoy the last time you went to mass in your neighbourhood?",
+     "category": "Community Provision",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eadd",
+     "question": "Are there enough local schools in this neighbourhood?",
+     "category": "Community Provision",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eadf",
+     "question": "Is there a church in walking distance of your home?",
+     "category": "Community Provision",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf7",
+     "question": "Did you have to wait more than 2 days for your last doctors appointment?",
+     "category": "Communiyt Provision",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead4",
+     "question": "Do you attend leisure classes in this area",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead9",
+     "question": "Do you frequent your local bars and pubs?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead3",
+     "question": "Are your neighbours friendly?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eace",
+     "question": "Do you like your neighbourhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eacf",
+     "question": "Did you grow up in your neighbourhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead1",
+     "question": "Do you/ your children go to school in your local area?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead2",
+     "question": "Do you work in this neighbourhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead0",
+     "question": "Do you grocery shop in your local area?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead8",
+     "question": "Do you count some of your neighbours among your closest friends?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead5",
+     "question": "Do you play sport in this neighbourhood",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf5",
+     "question": "Did you enjoy the last sports game you attended in your neighbourhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead6",
+     "question": "Do you feel safe after dark walking these streets?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eadb",
+     "question": "Have you ever been a victim of a crime in this neighoburhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eada",
+     "question": "Are things improving in this neighbourhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035ead7",
+     "question": "Are you proud of your local sports teams?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf4",
+     "question": "Did you enjoy the last visit to a pub / restaurant in your neighbourhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf3",
+     "question": "Did you enjoy the last sports game/event you attended in your neighbourhood?",
+     "category": "Culture",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae2",
+     "question": "Is this neighbourhood peaceful?",
+     "category": "Environment",
+     "timestamp": 1425806135198
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae3",
+     "question": "Is this neighbourhood clean?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae4",
+     "question": "Is this neighbourhood tidy?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae6",
+     "question": "Is this neighbourhood peaceful?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae8",
+     "question": "Is this street quiet?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae7",
+     "question": "Is the traffic heavy on the street?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae9",
+     "question": "Would you like more greenspace in this area?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae5",
+     "question": "Is this neighbourhood derelict?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaeb",
+     "question": "Are the footpaths wide enough around this area?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaed",
+     "question": "Are the roads too narrow around this area?",
+     "category": "Environment",
+     "timestamp": 1425806135229
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaea",
+     "question": "Would you like more small businesses close by?",
+     "category": "Environment",
+     "timestamp": 1425806135229
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaec",
+     "question": "Are the roads in good condition around this area?",
+     "category": "Environment",
+     "timestamp": 1425806135214
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf9",
+     "question": "Did you enjoy the last walk you took in your neighbourhood?",
+     "category": "Environment",
+     "timestamp": 1425806135229
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eaf8",
+     "question": "Did you enjoy the last time you went grocery shopping in your neighbourhood?",
+     "category": "Local Amenities",
+     "timestamp": 1425806135229
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae0",
+     "question": "Are there good local grocery stores close by?",
+     "category": "Local Amenities",
+     "timestamp": 1425806135229
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eae1",
+     "question": "Is there adequate access to grocery stores in this area?",
+     "category": "Local Amenities",
+     "timestamp": 1425806135229
+   },
+   {
+     "_id": "54fb62eeb64d29ac2035eafa",
+     "question": "Have you ever feel uncorfortable in the presence of some adult?",
+     "category": "Molestation",
+     "timestamp": 1425806135229
+   }
+ ]

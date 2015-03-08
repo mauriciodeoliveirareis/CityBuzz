@@ -47,6 +47,19 @@ app.get('/getQuestions', function(req, res){
 
 });
 
+
+
+app.get('/getLastQuestion', function(req, res){
+	console.log("getLastQuestion called, the query is:");
+	console.log(req.query);
+	questionDao.getLastQuestion(req.query, function(data){
+		console.log("Called getLastQuestion, the json result is: ");
+		console.log(data);
+		res.json({"res" : data});
+	});
+});
+
+
 /**
  * handles the posted data from the clients
  */

@@ -2,312 +2,326 @@
 curl -X POST -H "Content-Type: application/json" -d '
 [
  {
- 
- "Question": "Do you like your neighbourhood?",
- "Category": "Culture"
- 
+
+ "question": "Do you like your neighbourhood?",
+ "category": "Culture"
+
  }
 ,{
- 
- "Question": "Did you grow up in your neighbourhood?",
- "Category": "Culture"
- 
+
+ "question": "Did you grow up in your neighbourhood?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you grocery shop in your local area?",
- "Category": "Culture"
- 
+
+ "question": "Do you grocery shop in your local area?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you/ your children go to school in your local area?",
- "Category": "Culture"
- 
+
+ "question": "Do you/ your children go to school in your local area?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you work in this neighbourhood?",
- "Category": "Culture"
- 
+
+ "question": "Do you work in this neighbourhood?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Are your neighbours friendly?",
- "Category": "Culture"
- 
+
+ "question": "Are your neighbours friendly?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you attend leisure classes in this area",
- "Category": "Culture"
- 
+
+ "question": "Do you attend leisure classes in this area",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you play sport in this neighbourhood",
- "Category": "Culture"
- 
+
+ "question": "Do you play sport in this neighbourhood",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you feel safe after dark walking these streets?",
- "Category": "Culture"
- 
+
+ "question": "Do you feel safe after dark walking these streets?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Are you proud of your local sports teams?", 
- "Category": "Culture"
- 
+
+ "question": "Are you proud of your local sports teams?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you count some of your neighbours among your closest friends?", 
- "Category": "Culture"
- 
+
+ "question": "Do you count some of your neighbours among your closest friends?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Do you frequent your local bars and pubs?", 
- "Category": "Culture"
- 
+
+ "question": "Do you frequent your local bars and pubs?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Are things improving in this neighbourhood?", 
- "Category": "Culture"
- 
+
+ "question": "Are things improving in this neighbourhood?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Have you ever been a victim of a crime in this neighoburhood?	", 
- "Category": "Culture"
- 
+
+ "question": "Have you ever been a victim of a crime in this neighoburhood?	",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Does your social welfare office treat you well?	", 
- "Category": "Community Provision"
- 
+
+ "question": "Does your social welfare office treat you well?	",
+ "category": "Community Provision"
+
  }
 ,
  {
- 
- "Question": "Are there enough local schools in this neighbourhood?", 
- "Category": "Community Provision"
- 
+
+ "question": "Are there enough local schools in this neighbourhood?",
+ "category": "Community Provision"
+
  }
 ,
  {
- 
- "Question": "Does this neighbourhood have adequate social amenities?", 
- "Category": "Community Provision"
- 
+
+ "question": "Does this neighbourhood have adequate social amenities?",
+ "category": "Community Provision"
+
  }
 ,
  {
- 
- "Question": "Is there a church in walking distance of your home?", 
- "Category": "Community Provision"
- 
+
+ "question": "Is there a church in walking distance of your home?",
+ "category": "Community Provision"
+
  }
 ,
  {
- 
- "Question": "Are there good local grocery stores close by?",  
- "Category": "Local Amenities"
- 
+
+ "question": "Are there good local grocery stores close by?",
+ "category": "Local Amenities"
+
  }
 ,
  {
- 
- "Question": "Is there adequate access to grocery stores in this area?", 
- "Category": "Local Amenities"
- 
+
+ "question": "Is there adequate access to grocery stores in this area?",
+ "category": "Local Amenities"
+
  }
 ,
  {
- 
- "Question": "Is this neighbourhood peaceful?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood peaceful?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Is this neighbourhood clean?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood clean?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Is this neighbourhood tidy?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood tidy?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Is this neighbourhood derelict?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood derelict?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Is this neighbourhood peaceful?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood peaceful?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Is the traffic heavy on the street?	", 
- "Category": "Environment"
- 
+
+ "question": "Is the traffic heavy on the street?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Is this street quiet?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this street quiet?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Would you like more greenspace in this area?	", 
- "Category": "Environment"
- 
+
+ "question": "Would you like more greenspace in this area?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Would you like more small businesses close by?	", 
- "Category": "Environment"
- 
+
+ "question": "Would you like more small businesses close by?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Are the footpaths wide enough around this area?	", 
- "Category": "Environment"
- 
+
+ "question": "Are the footpaths wide enough around this area?	",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Are the roads in good condition around this area?", 
- "Category": "Environment"
- 
+
+ "question": "Are the roads in good condition around this area?",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Are the roads too narrow around this area?", 
- "Category": "Environment"
- 
+
+ "question": "Are the roads too narrow around this area?",
+ "category": "Environment"
+
  }
 ,
  {
- 
- "Question": "Are the streets congested in your area?", 
- "Category": "Accessibility"
- 
+
+ "question": "Are the streets congested in your area?",
+ "category": "Accessibility"
+
  }
 ,
  {
- 
- "Question": "Is this nighbourhood wheelchair friendly?", 
- "Category": "Accessibility"
- 
+
+ "question": "Is this nighbourhood wheelchair friendly?",
+ "category": "Accessibility"
+
  }
 ,
  {
- 
- "Question": "Are the local bus route(s) frequent enough here?", 
- "Category": "Accessibility"
- 
+
+ "question": "Are the local bus route(s) frequent enough here?",
+ "category": "Accessibility"
+
  }
 ,
  {
- 
- "Question": "Do you have to take more than 1 bus to get to work/school?", 
- "Category": "Accessibility"
- 
+
+ "question": "Do you have to take more than 1 bus to get to work/school?",
+ "category": "Accessibility"
+
  }
 ,
  {
- 
- "Question": "Is there adequate residents and visitor parking around here?	", 
- "Category": "Accessibility"
- 
+
+ "question": "Is there adequate residents and visitor parking around here?	",
+ "category": "Accessibility"
+
  }
 ,
 
 
  {
- 
- "Question": "Did you enjoy the last sports game/event you attended in your neighbourhood?	", 
- "Category": "Culture"
- 
+
+ "question": "Did you enjoy the last sports game/event you attended in your neighbourhood?	",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Did you enjoy the last visit to a pub / restaurant in your neighbourhood?", 
- "Category": "Culture"
- 
+
+ "question": "Did you enjoy the last visit to a pub / restaurant in your neighbourhood?",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Did you enjoy the last sports game you attended in your neighbourhood?	", 
- "Category": "Culture"
- 
+
+ "question": "Did you enjoy the last sports game you attended in your neighbourhood?	",
+ "category": "Culture"
+
  }
 ,
  {
- 
- "Question": "Did you enjoy the last time you went to mass in your neighbourhood?", 
- "Category": "Community Provision"
- 
+
+ "question": "Did you enjoy the last time you went to mass in your neighbourhood?",
+ "category": "Community Provision"
+
  }
 ,
  {
- 
- "Question": "Did you have to wait more than 2 days for your last doctors appointment?", 
- "Category": "Communiyt Provision"
- 
+
+ "question": "Did you have to wait more than 2 days for your last doctors appointment?",
+ "category": "Communiyt Provision"
+
  }
 ,
  {
- 
- "Question": "Did you enjoy the last time you went grocery shopping in your neighbourhood?", 
- "Category": "Local Amenities"
- 
+
+ "question": "Did you enjoy the last time you went grocery shopping in your neighbourhood?",
+ "category": "Local Amenities"
+
  }
 ,
  {
- 
- "Question": "Did you enjoy the last walk you took in your neighbourhood?", 
- "Category": "Environment"
+
+ "question": "Did you enjoy the last walk you took in your neighbourhood?",
+ "category": "Environment"
  }
+,
+{
+
+"question": "Have you ever feel uncorfortable in the presence of some adult?",
+"category": "Molestation"
+
+}
+,
+{
+
+"question": "Have you ever feel uncorfortable in the presence of some kid?",
+"category": "Bulling"
+
+}
 ]' http://localhost:3000/putQuestionList
 
 
@@ -327,335 +341,335 @@ curl -X POST -H "Content-Type: application/json" -d '
 //insert question example
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you like your neighbourhood?",
- "Category": "Culture"
- 
+
+ "question": "Do you like your neighbourhood?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you grow up in your neighbourhood?",
- "Category": "Culture"
- 
+
+ "question": "Did you grow up in your neighbourhood?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you grocery shop in your local area?",
- "Category": "Culture"
- 
+
+ "question": "Do you grocery shop in your local area?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you/ your children go to school in your local area?",
- "Category": "Culture"
- 
+
+ "question": "Do you/ your children go to school in your local area?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you work in this neighbourhood?",
- "Category": "Culture"
- 
+
+ "question": "Do you work in this neighbourhood?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are your neighbours friendly?",
- "Category": "Culture"
- 
+
+ "question": "Are your neighbours friendly?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you attend leisure classes in this area",
- "Category": "Culture"
- 
+
+ "question": "Do you attend leisure classes in this area",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you play sport in this neighbourhood",
- "Category": "Culture"
- 
+
+ "question": "Do you play sport in this neighbourhood",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you feel safe after dark walking these streets?",
- "Category": "Culture"
- 
+
+ "question": "Do you feel safe after dark walking these streets?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are you proud of your local sports teams?", //this questions assumes you live here.  Check residency 1st
- "Category": "Culture"
- 
+
+ "question": "Are you proud of your local sports teams?", //this questions assumes you live here.  Check residency 1st
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you count some of your neighbours among your closest friends?", //this questions assumes you live here.  Check residency 1st 
- "Category": "Culture"
- 
+
+ "question": "Do you count some of your neighbours among your closest friends?", //this questions assumes you live here.  Check residency 1st
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you frequent your local bars and pubs?", 
- "Category": "Culture"
- 
+
+ "question": "Do you frequent your local bars and pubs?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are things improving in this neighbourhood?", 
- "Category": "Culture"
- 
+
+ "question": "Are things improving in this neighbourhood?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Have you ever been a victim of a crime in this neighoburhood?	", 
- "Category": "Culture"
- 
+
+ "question": "Have you ever been a victim of a crime in this neighoburhood?	",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Does your social welfare office treat you well?	", 
- "Category": "Community Provision"
- 
+
+ "question": "Does your social welfare office treat you well?	",
+ "category": "Community Provision"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are there enough local schools in this neighbourhood?", 
- "Category": "Community Provision"
- 
+
+ "question": "Are there enough local schools in this neighbourhood?",
+ "category": "Community Provision"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Does this neighbourhood have adequate social amenities?", 
- "Category": "Community Provision"
- 
+
+ "question": "Does this neighbourhood have adequate social amenities?",
+ "category": "Community Provision"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is there a church in walking distance of your home?", //this questions assumes you live here.  Check residency 1st 
- "Category": "Community Provision"
- 
+
+ "question": "Is there a church in walking distance of your home?", //this questions assumes you live here.  Check residency 1st
+ "category": "Community Provision"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are there good local grocery stores close by?",  
- "Category": "Local Amenities"
- 
+
+ "question": "Are there good local grocery stores close by?",
+ "category": "Local Amenities"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is there adequate access to grocery stores in this area?", 
- "Category": "Local Amenities"
- 
+
+ "question": "Is there adequate access to grocery stores in this area?",
+ "category": "Local Amenities"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is this neighbourhood peaceful?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood peaceful?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is this neighbourhood clean?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood clean?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is this neighbourhood tidy?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood tidy?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is this neighbourhood derelict?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood derelict?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is this neighbourhood peaceful?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this neighbourhood peaceful?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is the traffic heavy on the street?	", 
- "Category": "Environment"
- 
+
+ "question": "Is the traffic heavy on the street?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is this street quiet?	", 
- "Category": "Environment"
- 
+
+ "question": "Is this street quiet?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Would you like more greenspace in this area?	", 
- "Category": "Environment"
- 
+
+ "question": "Would you like more greenspace in this area?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Would you like more small businesses close by?	", 
- "Category": "Environment"
- 
+
+ "question": "Would you like more small businesses close by?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are the footpaths wide enough around this area?	", 
- "Category": "Environment"
- 
+
+ "question": "Are the footpaths wide enough around this area?	",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are the roads in good condition around this area?", 
- "Category": "Environment"
- 
+
+ "question": "Are the roads in good condition around this area?",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are the roads too narrow around this area?", 
- "Category": "Environment"
- 
+
+ "question": "Are the roads too narrow around this area?",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are the streets congested in your area?", 
- "Category": "Accessibility"
- 
+
+ "question": "Are the streets congested in your area?",
+ "category": "Accessibility"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is this nighbourhood wheelchair friendly?", 
- "Category": "Accessibility"
- 
+
+ "question": "Is this nighbourhood wheelchair friendly?",
+ "category": "Accessibility"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Are the local bus route(s) frequent enough here?", 
- "Category": "Accessibility"
- 
+
+ "question": "Are the local bus route(s) frequent enough here?",
+ "category": "Accessibility"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Do you have to take more than 1 bus to get to work/school?", // Assumes you work here.  Determine work location 1st.
- "Category": "Accessibility"
- 
+
+ "question": "Do you have to take more than 1 bus to get to work/school?", // Assumes you work here.  Determine work location 1st.
+ "category": "Accessibility"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Is there adequate residents and visitor parking around here?	", 
- "Category": "Accessibility"
- 
+
+ "question": "Is there adequate residents and visitor parking around here?	",
+ "category": "Accessibility"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
@@ -663,64 +677,64 @@ curl -X POST -H "Content-Type: application/json" -d '
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you enjoy the last sports game/event you attended in your neighbourhood?	", 
- "Category": "Culture"
- 
+
+ "question": "Did you enjoy the last sports game/event you attended in your neighbourhood?	",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you enjoy the last visit to a pub / restaurant in your neighbourhood?", 
- "Category": "Culture"
- 
+
+ "question": "Did you enjoy the last visit to a pub / restaurant in your neighbourhood?",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you enjoy the last sports game you attended in your neighbourhood?	", 
- "Category": "Culture"
- 
+
+ "question": "Did you enjoy the last sports game you attended in your neighbourhood?	",
+ "category": "Culture"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you enjoy the last time you went to mass in your neighbourhood?", 
- "Category": "Community Provision"
- 
+
+ "question": "Did you enjoy the last time you went to mass in your neighbourhood?",
+ "category": "Community Provision"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you have to wait more than 2 days for your last doctors appointment?", 
- "Category": "Communiyt Provision"
- 
+
+ "question": "Did you have to wait more than 2 days for your last doctors appointment?",
+ "category": "Communiyt Provision"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you enjoy the last time you went grocery shopping in your neighbourhood?", 
- "Category": "Local Amenities"
- 
+
+ "question": "Did you enjoy the last time you went grocery shopping in your neighbourhood?",
+ "category": "Local Amenities"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
- "Question": "Did you enjoy the last walk you took in your neighbourhood?", 
- "Category": "Environment"
- 
+
+ "question": "Did you enjoy the last walk you took in your neighbourhood?",
+ "category": "Environment"
+
  }
 ' http://citybuzz.mybluemix.net/putQuestion
 
@@ -741,10 +755,9 @@ curl -X POST -H "Content-Type: application/json" -d '
 //insert answer example
 curl -X POST -H "Content-Type: application/json" -d '
  {
- 
+
  "Answer text": "Delete, please",
- "Question": "A question key here"
- 
+ "question": "A question key here"
+
  }
 ' http://localhost:3000/putAnswer
-
