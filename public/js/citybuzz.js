@@ -10,7 +10,7 @@ $( document ).ready(function() {
 	    });
 	}}); 
     
-    $('.btn-learn-more').click(function() {
+    $('.btn-showstats').click(function() {
 
 	$('#dialog').jqmShow();
 
