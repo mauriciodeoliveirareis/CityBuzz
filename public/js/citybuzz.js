@@ -1,6 +1,15 @@
 $( document ).ready(function() {
     console.log( "ready!" );
     
+    //red and green files for markers
+    var greenIcon = L.icon({
+	iconUrl: 'js/images/marker-icon-green.png'
+    });
+
+    var redIcon = L.icon({
+	iconUrl: 'js/images/marker-icon-red.png'
+    });
+
     $('#dialog').jqm({
 	onHide: function(hash) {
 	    //$("#dialog-msg").html('');
@@ -10,7 +19,7 @@ $( document ).ready(function() {
 	    });
 	}}); 
     
-    $('.btn-learn-more').click(function() {
+    $('.btn-showstats').click(function() {
 
 	$('#dialog').jqmShow();
 
@@ -81,8 +90,27 @@ $( document ).ready(function() {
 	pointsFromAjaxRequest.forEach(function(point) {
             //console.log("adding point,coordX = " + point.coordX);
             //console.log("adding point,coordY = " + point.coordY);
-            var marker = L.marker([point.coordX, point.coordY]).addTo(map)
-		.bindPopup(point.answer).openPopup();
+
+            var typeOfDeviceIcon = ""; // appID: "1" //the kind of client that is sending data 
+                                       // (1 for android, 2 for hardware, 3 for web)
+            console.log("The appID: " + point.appID);
+            if (point.appID=="1") {
+                typeOfDeviceIcon = "<img src='/js/images/type-device-android.png' width='25' height='25' border='0'/>";
+            } else if (point.appID=="2") {
+                typeOfDeviceIcon = "<img src='/js/images/type-device-galileo.png' width='25' height='25' border='0'/>";
+            } else {
+                typeOfDeviceIcon = "<img src='/js/images/type-device-ios.png' width='25' height='25' border='0'/>";
+            }
+           
+            if(point.answer == '1'){
+                var marker = L.marker([point.coordX,
+				       point.coordY],{icon:
+                                       greenIcon}).addTo(map).bindPopup(point.category + "<br/>" + typeOfDeviceIcon).openPopup();
+            }else{
+                var marker = L.marker([point.coordX,
+				       point.coordY],{icon:
+				       redIcon}).addTo(map).bindPopup(point.category + "<br/>" + typeOfDeviceIcon).openPopup();
+            }
             
             arrayOfMarkers.push(marker);
 	});

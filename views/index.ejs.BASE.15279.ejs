@@ -8,7 +8,6 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/jqModal.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/leaflet.css" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	
     <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
     
@@ -53,13 +52,14 @@
       <div class="main-section-header container" style="padding-left: 0px; padding-right: 5px; padding-top: 0px; margin-top: -20px; margin-bottom: -20px;" >
 	<h1>Welcome to CityBuzz!</h1>
 	<p>Select one of the options below and <br/>let the cyber-citizenship experience begin.</p>
-        <a class="btn-learn-more btn btn-warning">Learn More about it ....</a>		
+        <a class="btn-learn-more btn btn-warning" onclick="ajaxCall()">Learn More about it ....</a>
+		
       </div>
     </div>
 	
     <div class="container">
-      <div class="row" style="padding-left: 50px; padding-right: 50px; height: 50px;">
-	
+      <div class="row" style="padding-left: 50px;">
+          &nbsp; &nbsp;
           <div class="dropdown">
               <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="btn btn-default dropdown-toggle"> 
                    Questions Categories
@@ -72,14 +72,9 @@
                   <li role="presentation"><a href="#" class="category-option" tabindex="-1" role="menuitem">Environment</a></li>
                   <li role="presentation"><a href="#" class="category-option" tabindex="-1" role="menuitem">Local Amenities</a></li>
               </ul>
-              <a class="btn-showstats btn btn-default pull-right" onclick="ajaxCall()">Show statistics
-		<span class="glyphicon glyphicon-stats"></span>
-	      </a>
-
-          </div>	
-        
+          </div>
+          &nbsp; &nbsp;
       </div>
-	  
           
       <div class="row">
           <div id="map" style="height: 440px; border: 1px solid #AAA;"></div>
